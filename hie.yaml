@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "yesa:lib"
+
+    - path: "./app/main.hs"
+      component: "yesa:exe:yesa"
+
+    - path: "./app/DevelMain.hs"
+      component: "yesa:exe:yesa"
+
+    - path: "./app/Paths_yesa.hs"
+      component: "yesa:exe:yesa"
