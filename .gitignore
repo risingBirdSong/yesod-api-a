@@ -19,4 +19,8 @@ cabal.sandbox.config
 *.keter
 *~
 \#*
+<<<<<<< HEAD
 yesb.cabal
+=======
+yesa.cabal
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5

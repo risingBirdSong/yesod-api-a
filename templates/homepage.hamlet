@@ -1,4 +1,5 @@
 <div .masthead>
+<<<<<<< HEAD
     <div .container>
         <div .row>
             <h1 .header>
@@ -139,3 +140,6 @@
                        test suite that performs tests on this page.
                    <p>
                        You can run your tests by doing: <code>stack test</code>
+=======
+   <h1 > some nice posts for you to witness
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5

@@ -1,13 +1,21 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
+<<<<<<< HEAD
+=======
+{-# LANGUAGE QuasiQuotes #-}
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
 module Handler.Home where
 
 import Import
+<<<<<<< HEAD
 import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3)
 import Text.Julius (RawJS (..))
+=======
+import Data.Aeson
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 
 -- Define our data that will be used for creating the form.
 data FileForm = FileForm
@@ -22,6 +30,7 @@ data FileForm = FileForm
 -- The majority of the code you will write in Yesod lives in these handler
 -- functions. You can spread them across multiple files if you are so
 -- inclined, or create a single monolithic file.
+<<<<<<< HEAD
 getHomeR :: Handler Html
 getHomeR = do
     (formWidget, formEnctype) <- generateFormPost sampleForm
@@ -71,3 +80,13 @@ commentIds = ("js-commentForm", "js-createCommentTextarea", "js-commentList")
 
 getAllComments :: DB [Entity Comment]
 getAllComments = selectList [] [Asc CommentId]
+=======
+-- getHomeR :: Handler Html
+-- getHomeR :: Handler Html
+getHomeR :: Handler Html
+getHomeR = defaultLayout [whamlet|Hello World!|]
+
+
+postHomeR :: Handler Html
+postHomeR = undefined
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5

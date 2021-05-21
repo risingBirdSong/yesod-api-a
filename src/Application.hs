@@ -20,7 +20,10 @@ module Application
     , db
     ) where
 
+<<<<<<< HEAD
 import Network.Wai.Middleware.Cors
+=======
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 import Control.Monad.Logger                 (liftLoc, runLoggingT)
 import Database.Persist.Postgresql          (createPostgresqlPool, pgConnStr,
                                              pgPoolSize, runSqlPool)
@@ -43,11 +46,18 @@ import System.Log.FastLogger                (defaultBufSize, newStdoutLoggerSet,
 -- Don't forget to add new modules to your cabal file!
 import Handler.Common
 import Handler.Home
+<<<<<<< HEAD
 import Handler.Comment
 import Handler.Profile
 
 import Handler.Simple
 
+=======
+import Handler.Posts
+import Handler.Post
+import Handler.Profile
+
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 -- This line actually creates our YesodDispatch instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see the
 -- comments there for more details.
@@ -97,7 +107,11 @@ makeApplication foundation = do
     logWare <- makeLogWare foundation
     -- Create the WAI application and apply middlewares
     appPlain <- toWaiAppPlain foundation
+<<<<<<< HEAD
     return $ logWare $ defaultMiddlewaresNoLogging $ simpleCors appPlain
+=======
+    return $ logWare $ defaultMiddlewaresNoLogging appPlain
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 
 makeLogWare :: App -> IO Middleware
 makeLogWare foundation =

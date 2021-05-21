@@ -3,10 +3,17 @@
 After installing Postgres, run:
 
 ```
+<<<<<<< HEAD
 createuser yesb --pwprompt --superuser
 # Enter password yesb when prompted
 createdb yesb
 createdb yesb_test
+=======
+createuser yesa --pwprompt --superuser
+# Enter password yesa when prompted
+createdb yesa
+createdb yesa_test
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 ```
 
 ## Haskell Setup
@@ -31,7 +38,11 @@ As your code changes, your site will be automatically recompiled and redeployed 
 ## Tests
 
 ```
+<<<<<<< HEAD
 stack test --flag yesb:library-only --flag yesb:dev
+=======
+stack test --flag yesa:library-only --flag yesa:dev
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 ```
 
 (Because `yesod devel` passes the `library-only` and `dev` flags, matching those flags means you don't need to recompile between tests and development, and it disables optimization to speed up your test compile times).

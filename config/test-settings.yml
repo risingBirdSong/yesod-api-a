@@ -5,7 +5,12 @@ database:
   # would like to have environment variable overrides, you could instead use
   # something like:
   #
+<<<<<<< HEAD
   #   database: "_env:PGDATABASE:yesb_test"
   database: yesb_test
+=======
+  #   database: "_env:PGDATABASE:yesa_test"
+  database: yesa_test
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 
 auth-dummy-login: true

@@ -12,6 +12,7 @@ Email
     verkey Text Maybe
     UniqueEmail email
 
+<<<<<<< HEAD
 Comment json -- Adding "json" causes ToJSON and FromJSON instances to be derived.
     message Text
     userId UserId Maybe
@@ -23,3 +24,10 @@ Simple
     value Text 
     deriving Show
     deriving Eq
+=======
+
+Post
+  title Text
+  content Text
+
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5

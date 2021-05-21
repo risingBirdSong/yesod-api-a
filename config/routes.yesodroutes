@@ -9,8 +9,16 @@
 
 / HomeR GET POST
 
+<<<<<<< HEAD
 /comments CommentR POST
 
 /profile ProfileR GET
 
 /simple SimpleR GET 
+=======
+
+/profile ProfileR GET
+
+/posts         PostsR GET POST
+/posts/#PostId PostR  GET PUT DELETE
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5

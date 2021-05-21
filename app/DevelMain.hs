@@ -6,7 +6,11 @@
 --
 -- 1. Start up GHCi
 --
+<<<<<<< HEAD
 -- $ stack ghci yesb:lib --no-load --work-dir .stack-work-devel
+=======
+-- $ stack ghci yesa:lib --no-load --work-dir .stack-work-devel
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 --
 -- 2. Load this module
 --

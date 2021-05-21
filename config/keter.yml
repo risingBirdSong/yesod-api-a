@@ -15,8 +15,13 @@ stanzas:
     #
     # The path given is for Stack projects. If you're still using cabal, change
     # to
+<<<<<<< HEAD
     # exec: ../dist/build/yesb/yesb
     exec: ../dist/bin/yesb
+=======
+    # exec: ../dist/build/yesa/yesa
+    exec: ../dist/bin/yesa
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 
     # Command line options passed to your application.
     args: []
@@ -25,7 +30,11 @@ stanzas:
       # You can specify one or more hostnames for your application to respond
       # to. The primary hostname will be used for generating your application
       # root.
+<<<<<<< HEAD
       - www.yesb.com
+=======
+      - www.yesa.com
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
 
     # Enable to force Keter to redirect to https
     # Can be added to any stanza
@@ -34,7 +43,11 @@ stanzas:
   # Static files.
   - type: static-files
     hosts:
+<<<<<<< HEAD
       - static.yesb.com
+=======
+      - static.yesa.com
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
     root: ../static
 
     # Uncomment to turn on directory listings.
@@ -44,9 +57,15 @@ stanzas:
   - type: redirect
 
     hosts:
+<<<<<<< HEAD
       - yesb.com
     actions:
       - host: www.yesb.com
+=======
+      - yesa.com
+    actions:
+      - host: www.yesa.com
+>>>>>>> d003061f74acd3edd0a00b1daf9f6d8a7882dde5
         # secure: false
         # port: 80
 
